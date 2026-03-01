@@ -6,8 +6,10 @@ class Palindrome {
         int n = s.length();
         
         for(int i =0; i < n/2; i++){
+            System.out.println(i);
             if(s.charAt(i) != s.charAt(n-i-1)){
                 palindrome = false;
+                break;
             }
         }
         if(palindrome){
